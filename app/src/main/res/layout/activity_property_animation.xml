@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    tools:context=".PropertyAnimationActivity">
+
+    <Button
+        android:id="@+id/property_animation_btn0"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:background="@color/colorAccent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textAllCaps="false"
+        android:text="ObjectAnimator_ofInt_横向移动"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/property_animation_btn1"
+        android:background="#ff0000"
+        android:text="ObjectAnimator_ofInt_宽度变化"
+        android:textColor="#ffffff"
+        style="@style/property_animator_btn_style" />
+    <Button
+        android:id="@+id/property_animation_btn2"
+        android:background="#0000ff"
+        android:text="ValueAnimator_ofInt_宽度变化"
+        android:textColor="#ffffff"
+        style="@style/property_animator_btn_style" />
+    <Button
+        android:id="@+id/property_animation_btn3"
+        android:background="#00ff00"
+        android:text="ValueAnimator_ofObject_宽度变化"
+        android:textColor="#ffffff"
+        style="@style/property_animator_btn_style" />
+    <Button
+        android:id="@+id/property_animation_btn4"
+        android:background="#0ffff0"
+        android:text="AnimatorSet_组合动画"
+        android:textColor="#ffffff"
+        style="@style/property_animator_btn_style" />
+
+    <com.zhou.animationdemo.PropertySwitcher
+        android:id="@+id/property_animation_switcher"
+        android:layout_marginTop="20dp"
+        android:layout_width="100dp"
+        android:layout_height="40dp" />
+
+
+
+</LinearLayout>
